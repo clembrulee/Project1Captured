@@ -1,0 +1,42 @@
+// global styles
+html{
+	font-size: 62.5%;
+	body{
+		font-family: $mainFont;
+		font-style: italic;
+		font-weight: bold;
+	}
+}
+
+.wrapper{
+	margin: 0 auto;
+	max-width: 1300px;
+	width: 90%;
+}
+
+img{
+	height: auto;
+	width: 100%;
+}
+
+ul{
+	margin: 0 auto;
+}
+
+p{
+	font-family: $bodyFont;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 2rem;
+}
+
+a{
+		font-size: 2rem;
+		text-decoration: none;
+}
+
+.imageShadow{
+	width: 50%;
+	height: 100%;
+	background-color: $imageShadow;
+}

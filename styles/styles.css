@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Roboto&display=swap");
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -235,20 +236,222 @@ html {
   overflow: hidden;
 }
 
-li {
-  list-style: none;
+html {
+  font-size: 62.5%;
 }
 
-li a {
-  text-decoration: none;
+html body {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: bold;
 }
 
-header {
-  background-image: url(../assets/header-image.jpg);
-  background-size: cover;
+.wrapper {
+  margin: 0 auto;
+  max-width: 1300px;
+  width: 90%;
 }
 
 img {
-  width: 100%;
   height: auto;
+  width: 100%;
+}
+
+ul {
+  margin: 0 auto;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+}
+
+a {
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.imageShadow {
+  width: 50%;
+  height: 100%;
+  background-color: #FDFA69;
+}
+
+li {
+  list-style: none;
+  margin: 0 2.5rem;
+}
+
+li a {
+  color: #2C2C2C;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h1 {
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  top: 25rem;
+  z-index: 10;
+  font-family: "Playfair Display", serif;
+  font-size: 13.8rem;
+  font-style: italic;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 4.2rem;
+  font-style: italic;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.about h2 {
+  margin-top: 20rem;
+}
+
+header {
+  background-image: url("../assets/header-image.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 2.5rem  0;
+  margin-bottom: 2rem;
+}
+
+header a:hover {
+  border-bottom: 3px solid #4CEEA7;
+}
+
+.blogHeader {
+  background-image: url("../assets/blog-header.jpg");
+}
+
+.about {
+  background-color: #EFFDF3;
+  position: relative;
+}
+
+.about .imageShadow {
+  position: absolute;
+  bottom: 70%;
+  left: 54.5%;
+  width: 70rem;
+  height: 60rem;
+}
+
+.about .imageShadow img {
+  width: 85.5%;
+  height: auto;
+  position: absolute;
+  bottom: 5%;
+  left: 14.5%;
+}
+
+.about .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  text-align: center;
+}
+
+.about p {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.about a {
+  display: inline-block;
+  height: 2rem;
+  margin: 10rem auto;
+  padding: 2rem 4rem;
+  background-color: #4CEEA7;
+}
+
+.extraInfo {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: 250px;
+      grid-template-rows: 250px;
+}
+
+.extraInfo .imageShadow1 {
+  height: auto;
+  width: 100%;
+  position: relative;
+  background-color: #FDFA69;
+  margin: 0 20rem 10rem 0;
+}
+
+.extraInfo .imageShadow1 img {
+  position: absolute;
+  bottom: 20%;
+  left: -25%;
+}
+
+.extraInfo .imageShadow2 {
+  height: auto;
+  width: 100%;
+  position: relative;
+  background-color: #FDFA69;
+}
+
+.extraInfo .imageShadow2 img {
+  position: absolute;
+  bottom: 20%;
+  left: 25%;
+}
+
+.extraInfo .post2 {
+  text-align: right;
+}
+
+.featureBlog {
+  background-color: #EFFDF3;
+}
+
+.featureBlog .feature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gallery ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+* {
+  border: 1px solid midnightblue;
 }

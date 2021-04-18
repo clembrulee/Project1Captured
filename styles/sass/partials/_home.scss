@@ -1,0 +1,105 @@
+header{
+	background-image: $bgImage1;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 80vh;
+	ul{
+		display: flex;
+		justify-content: flex-end;
+		padding: 2.5rem  0;
+		margin-bottom: 2rem;
+	}
+	a:hover{
+		border-bottom: 3px solid $buttonsndLogosColor;
+	}
+	
+}
+
+.blogHeader{
+	background-image: $bgImage2;
+}
+
+.about{
+	background-color: $backgroundColorTwo;
+	position: relative;
+	.imageShadow{
+		position: absolute;
+		bottom: 70%;
+		left: 54.5%;
+		width: 70rem;
+		height: 60rem;
+		img{
+			width: 85.5%;
+			height: auto;
+			position:absolute;
+			bottom: 5%;
+			left: 14.5%;
+		}
+	}
+	.wrapper{
+		display:flex;
+		flex-direction: column;
+		position: relative;
+		text-align: center;
+	}
+	p{
+		width:50%;
+		margin:0 auto;
+	}
+	a{
+		display:inline-block;
+		height:2rem;
+		margin: 10rem auto;
+		padding: 2rem 4rem;
+		background-color:$buttonsndLogosColor;
+	}
+}
+
+.extraInfo{
+	display:grid;
+	grid-template-columns:50% 50%;
+	grid-template-rows: 250px;
+	.imageShadow1{
+		height: auto;
+		width: 100%;
+		position: relative;
+		background-color: $imageShadow;
+		margin: 0 20rem 10rem 0;
+		
+		img{
+			position: absolute;
+			bottom: 20%;
+			left: -25%; 
+		}
+	}
+	.imageShadow2{
+		height: auto;
+		width: 100%;
+		position: relative;
+		background-color: $imageShadow;
+		img{
+
+			position: absolute;
+			bottom: 20%;
+			left: 25%; 
+		}
+	}
+	.post2{
+		text-align:right;
+	}
+}
+
+
+
+.featureBlog{
+	background-color:$backgroundColorTwo;
+	.feature{
+		display:flex;
+		align-items: center;
+	}
+}
+
+.gallery ul{
+	display: flex;
+}
