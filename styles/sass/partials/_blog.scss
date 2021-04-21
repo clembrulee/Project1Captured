@@ -1,0 +1,75 @@
+.blogHeader{
+	background-image: $bgImage2;
+}
+
+.blogWrapper{
+	max-width: 1280px;
+	margin-left: 40%;
+	width: 50%;
+}
+.blogMain{
+	background-color: $backgroundColorTwo;
+	position:relative;
+}
+
+.blogTitle{
+	position:static;
+	display:flex;
+	margin:25rem 0;
+	text-align:left;
+	@include fontStyle(8rem);
+}
+
+.imageContainer{
+	width: 10rem;
+	height:auto;
+}
+
+.articleFlex{
+	display:flex;
+	flex-direction: column;
+	box-shadow: -15px 15px $imageShadow;
+	position:relative;
+	top:-25rem;
+	.imageShadow{
+		width:100%;
+		background-color:none;
+	}
+	img{
+		width:120%;
+		box-shadow: -15px 50px $imageShadow;
+		margin-bottom: 5rem;
+	}
+	h2{
+		margin:0;
+	}
+	p{
+		margin:0;
+		
+	}
+	p:first-of-type{
+		margin-bottom:5rem;
+	}
+}
+
+aside{
+	display:flex;
+	flex-direction: column;
+	width: 20%;
+	top: 15rem;
+	left: 10rem;
+	position:absolute;
+	background-color: $backgroundColorOne;
+	img{
+		position:relative;
+		left: -250px;
+		width: 500%;
+	}
+}
+
+.commentSection{
+
+	p{
+		margin:0;
+	}
+}

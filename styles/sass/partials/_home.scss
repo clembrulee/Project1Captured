@@ -3,7 +3,7 @@ header{
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	height: 80vh;
+	height: 90vh;
 	ul{
 		display: flex;
 		justify-content: flex-end;
@@ -16,25 +16,32 @@ header{
 	
 }
 
-.blogHeader{
-	background-image: $bgImage2;
+h1{
+	position: absolute;
+	text-align: center;
+	text-transform:uppercase;
+	top: 45%;
+	left: 30%;
+	z-index: 10;
+	@include fontStyle(13.8rem);
 }
+
 
 .about{
 	background-color: $backgroundColorTwo;
 	position: relative;
-	.imageShadow{
+		.imageShadow{
 		position: absolute;
-		bottom: 70%;
-		left: 54.5%;
-		width: 70rem;
+		bottom: 90%;
+		left: 62%;
+		width: 60rem;
 		height: 60rem;
 		img{
-			width: 85.5%;
+			width: 92%;
 			height: auto;
 			position:absolute;
-			bottom: 5%;
-			left: 14.5%;
+			bottom: 7%;
+			left: 8%;
 		}
 	}
 	.wrapper{
@@ -43,63 +50,135 @@ header{
 		position: relative;
 		text-align: center;
 	}
+	.aboutText{
+		padding-bottom: 15rem;
+	}
 	p{
 		width:50%;
 		margin:0 auto;
 	}
-	a{
-		display:inline-block;
-		height:2rem;
-		margin: 10rem auto;
-		padding: 2rem 4rem;
-		background-color:$buttonsndLogosColor;
-	}
+	
 }
 
-.extraInfo{
+.extraInfoWrapper{
+	width: 90%;
+	margin:0 auto;
+}
+
+.guides{
 	display:grid;
-	grid-template-columns:50% 50%;
-	grid-template-rows: 250px;
+	grid-template-columns:40% 50%;
+	grid-template-rows: 40rem 40rem;
+	gap: 10rem 25rem;
 	.imageShadow1{
-		height: auto;
-		width: 100%;
-		position: relative;
 		background-color: $imageShadow;
-		margin: 0 20rem 10rem 0;
-		
+		height: auto;
+		// margin-left: 5rem;
+		position: relative;
+		width: 100%;
 		img{
-			position: absolute;
-			bottom: 20%;
+			bottom: 10%;
 			left: -25%; 
+			position: absolute;
+			width: 120%;
 		}
 	}
 	.imageShadow2{
-		height: auto;
-		width: 100%;
-		position: relative;
 		background-color: $imageShadow;
+		height: auto;
+		position: relative;
+		width: 90%;
 		img{
-
+			bottom: 10%;
+			left: 4%; 
 			position: absolute;
-			bottom: 20%;
-			left: 25%; 
+			width:105%;
 		}
 	}
+	.post1{
+		padding-right: 10rem;
+		width: 90%;
+	}
 	.post2{
+		
 		text-align:right;
+		padding-left:  15rem;
+	}
+	a{
+		margin: 0;
 	}
 }
 
+.midNav{
+	background-color: $backgroundColorTwo;
+	.midGrid{
+		display:grid;
+		grid-template-columns: 50% 50%;
+		grid-template-rows:40rem 40rem ;
+		.gridFlex{
+			display:flex;
+		}
+		i{
+			border-radius:50%;
+			background-color: $buttonsndLogosColor;
+			color: $textColor;
+			font-size: 5rem;
+			margin-top: 2rem;
+			padding: 1.5rem;
+			
+			
+			
+		}
+		h3{
+			@include fontStyle(2.5rem);
+		}
+		
+	}
+}
 
+.gridFlex i:nth-of-type(2){
+	padding: 5rem;
+}
+
+.gridFlex i:nth-of-type(3){
+				padding: 5rem;
+			}
 
 .featureBlog{
 	background-color:$backgroundColorTwo;
 	.feature{
-		display:flex;
 		align-items: center;
+		display:flex;
+		margin: 0 auto 5rem;
+		.imageShadow{
+			position: relative;
+			width: 20rem;
+			height: 20rem;
+			margin: 0 auto;
+		}
+	}
+}
+
+.feature{
+	img{
+	position: absolute;
+	bottom: 15%;
+	left: -15%;
+	}
+	.featureText{
+	flex-basis: 60%;
 	}
 }
 
 .gallery ul{
 	display: flex;
+	margin: 5rem auto;
+}
+
+footer p{
+	background-color: $textColor;
+	color:$backgroundColorOne;
+	margin: 0 auto;
+	padding: 1.5rem 0;
+	text-align: center;
 }
