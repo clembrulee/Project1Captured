@@ -1,3 +1,4 @@
+// header section
 header{
 	background-image: $bgImage1;
 	background-size: cover;
@@ -16,6 +17,7 @@ header{
 	
 }
 
+// Captured Title
 h1{
 	position: absolute;
 	text-align: center;
@@ -26,7 +28,7 @@ h1{
 	@include fontStyle(13.8rem);
 }
 
-
+// About captured section
 .about{
 	background-color: $backgroundColorTwo;
 	position: relative;
@@ -60,20 +62,17 @@ h1{
 	
 }
 
+// Extra info section
 .extraInfoWrapper{
-	width: 90%;
-	margin:0 auto;
-}
-
-.guides{
 	display:grid;
 	grid-template-columns:40% 50%;
 	grid-template-rows: 40rem 40rem;
 	gap: 10rem 25rem;
+	width: 90%;
+	margin:0 auto;
 	.imageShadow1{
 		background-color: $imageShadow;
 		height: auto;
-		// margin-left: 5rem;
 		position: relative;
 		width: 100%;
 		img{
@@ -87,11 +86,13 @@ h1{
 		background-color: $imageShadow;
 		height: auto;
 		position: relative;
+		bottom: -15%;
+		left: -5%;
 		width: 90%;
 		img{
+			position: absolute;
 			bottom: 10%;
 			left: 4%; 
-			position: absolute;
 			width:105%;
 		}
 	}
@@ -100,7 +101,6 @@ h1{
 		width: 90%;
 	}
 	.post2{
-		
 		text-align:right;
 		padding-left:  15rem;
 	}
@@ -109,24 +109,27 @@ h1{
 	}
 }
 
+// middle green grid section
 .midNav{
 	background-color: $backgroundColorTwo;
 	.midGrid{
 		display:grid;
 		grid-template-columns: 50% 50%;
 		grid-template-rows:40rem 40rem ;
+		padding-top: 8rem;
 		.gridFlex{
 			display:flex;
+			
 		}
 		.iconContainer{
-			width: 10rem;
-			height: 10rem;
+			margin-right: 2rem;
 		}
 		i{
 			border-radius:50%;
 			background-color: $buttonsndLogosColor;
 			color: $textColor;
 			font-size: 5rem;
+			margin-top:7rem;
 			padding: 1.5rem;
 			width:100%;
 			
@@ -139,14 +142,7 @@ h1{
 	}
 }
 
-.gridFlex i:nth-of-type(2){
-	padding: 5rem;
-}
-
-.gridFlex i:nth-of-type(3){
-				padding: 5rem;
-			}
-
+// featured blog section
 .featureBlog{
 	background-color:$backgroundColorTwo;
 	.feature{
