@@ -481,12 +481,7 @@ h1 {
 }
 
 .midNav .midGrid .iconContainer {
-<<<<<<< HEAD
-  width: 10rem;
-  height: 10rem;
-=======
   margin-right: 2rem;
->>>>>>> main
 }
 
 .midNav .midGrid i {
@@ -494,10 +489,7 @@ h1 {
   background-color: #4CEEA7;
   color: #2C2C2C;
   font-size: 5rem;
-<<<<<<< HEAD
-=======
   margin-top: 7rem;
->>>>>>> main
   padding: 1.5rem;
   width: 100%;
 }
@@ -509,17 +501,6 @@ h1 {
   font-weight: bold;
   text-transform: uppercase;
   padding-top: 10rem;
-<<<<<<< HEAD
-}
-
-.gridFlex i:nth-of-type(2) {
-  padding: 5rem;
-}
-
-.gridFlex i:nth-of-type(3) {
-  padding: 5rem;
-=======
->>>>>>> main
 }
 
 .featureBlog {
@@ -895,10 +876,6 @@ aside li::before {
   text-transform: uppercase;
 }
 
-<<<<<<< HEAD
-* {
-  border: 1px solid midnightblue;
-=======
 @media (max-width: 940px) {
   h1 {
     top: 65%;
@@ -1077,5 +1054,4 @@ aside li::before {
         -ms-flex-direction: column;
             flex-direction: column;
   }
->>>>>>> main
 }
