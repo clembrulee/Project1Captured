@@ -745,6 +745,12 @@ aside li::before {
           flex-direction: column;
 }
 
+.commentForm .userID {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .commentForm .username,
 .commentForm .email {
   background-color: #EFFDF3;
@@ -929,6 +935,25 @@ aside li::before {
     width: 127%;
     left: -35%;
   }
+  .commentForm .username,
+  .commentForm .email {
+    font-size: 1.5rem;
+    padding: 2.5rem;
+    margin: 2rem 1rem;
+  }
+  aside li {
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+  }
+  aside p {
+    font-size: 1.5rem;
+  }
+  aside a {
+    font-size: 1.5rem;
+  }
+  aside h3 {
+    font-size: 2rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -958,6 +983,20 @@ aside li::before {
   }
   .gridFlex:nth-child(2) > div:nth-child(2) {
     padding-right: 5rem;
+  }
+  aside img {
+    left: -48px;
+    width: 200%;
+  }
+  aside {
+    width: 28%;
+    left: 6rem;
+  }
+}
+
+@media (max-width: 768px) and (max-width: 940px) {
+  aside li {
+    padding-bottom: 1rem;
   }
 }
 

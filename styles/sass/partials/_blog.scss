@@ -125,6 +125,9 @@ aside{
 .commentForm{
 	display: flex;
 	flex-direction: column;
+	.userID{
+		display:flex;
+	}
 	.username,
 	.email{
 		background-color: $backgroundColorTwo;
