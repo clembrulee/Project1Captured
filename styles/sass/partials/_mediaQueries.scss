@@ -1,0 +1,150 @@
+@media (max-width: 940px){
+
+h1 {
+top: 65%;
+left: 40%;
+font-size: 8.8rem;
+}
+
+header {
+	background-size: auto;
+	background-position: initial;
+}
+
+.about{
+	.imageShadow {
+		display: none;
+		img{
+			display: none;
+		}
+	}
+}
+
+.extraInfoWrapper {
+	grid-template-columns: 40% 40%;
+	gap: 7rem 20rem;
+	.post1 {
+		padding-right: 0;
+		width: 100%;
+	}
+	.post2 {
+		padding-left: 0;
+	}	
+	.imageShadow1 {
+		width: 145%;
+	}
+	.imageShadow2 {
+		height: 50%;
+		width: 127%;
+		left: -35%;
+	}
+}
+
+}
+
+
+@media (max-width:768px){
+	h1 {
+	top: 71%;
+	left: 34%;
+	}
+
+	header nav li{
+		margin:0 2rem;
+	}
+	.extraInfoWrapper {
+		gap: 7rem 17rem;
+		.imageShadow1{
+			width: 145%;
+			height: 80%;
+		}
+		.imageShadow2{
+		left: -52%;
+		}
+	}
+
+	p {
+	font-size: 1.5rem;
+	}
+
+	.midNav .midGrid i {
+		font-size: 2.5rem;
+		margin-top: 8.5rem;
+	}
+
+	.gridFlex:nth-child(2) > div:nth-child(2) {
+	padding-right: 5rem;
+	}
+
+}
+
+
+
+@media (max-width: 480px) {
+
+	header {
+	background-size: cover;
+	height: 50vh;
+	ul{
+		display:none;
+	}
+	}
+	h1 {
+		font-size: 5.5rem;
+		top: 35%;
+		left: 30%;
+	}
+	.extraInfoWrapper{
+		display: flex;
+		flex-direction: column;
+		.imageShadow2 {
+			height: auto;
+			width: 100%;
+			left: 0;
+			background-color: none;
+			img{
+				position: static;
+			}
+		}
+		.imageShadow1 {
+			width: 106%;
+			height: auto;
+			background-color: none;
+			img {
+				position: static;
+				width: 100%;
+			}
+		}
+	} 
+	.midNav .midGrid i {
+		margin-top: 3.5rem;
+	}
+	p {
+		padding-left: 2.5rem;
+	}
+	.about h2 {
+		margin-top: 5rem;
+	}
+	.about p {
+		width: 80%;
+	}
+	.about .aboutText {
+	padding-bottom: 5rem;
+	}
+	h2 {
+		font-size: 2.5rem;
+		padding-left: 2.5rem;
+	}
+	.midNav .midGrid {
+		display: flex;
+		flex-direction: column;
+		h3 {
+			padding-top: 5rem;
+		}
+	}
+
+	.gallery ul {
+		flex-direction: column;
+	}
+
+}

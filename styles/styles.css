@@ -405,11 +405,6 @@ h1 {
 }
 
 .extraInfoWrapper {
-  width: 90%;
-  margin: 0 auto;
-}
-
-.guides {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 40% 50%;
@@ -417,47 +412,51 @@ h1 {
   -ms-grid-rows: 40rem 40rem;
       grid-template-rows: 40rem 40rem;
   gap: 10rem 25rem;
+  width: 90%;
+  margin: 0 auto;
 }
 
-.guides .imageShadow1 {
+.extraInfoWrapper .imageShadow1 {
   background-color: #FDFA69;
   height: auto;
   position: relative;
   width: 100%;
 }
 
-.guides .imageShadow1 img {
+.extraInfoWrapper .imageShadow1 img {
   bottom: 10%;
   left: -25%;
   position: absolute;
   width: 120%;
 }
 
-.guides .imageShadow2 {
+.extraInfoWrapper .imageShadow2 {
   background-color: #FDFA69;
   height: auto;
   position: relative;
+  bottom: -15%;
+  left: -5%;
   width: 90%;
 }
 
-.guides .imageShadow2 img {
+.extraInfoWrapper .imageShadow2 img {
+  position: absolute;
   bottom: 10%;
   left: 4%;
-  position: absolute;
   width: 105%;
 }
 
-.guides .post1 {
+.extraInfoWrapper .post1 {
   padding-right: 10rem;
   width: 90%;
 }
 
-.guides .post2 {
+.extraInfoWrapper .post2 {
   text-align: right;
   padding-left: 15rem;
 }
 
-.guides a {
+.extraInfoWrapper a {
   margin: 0;
 }
 
@@ -472,6 +471,7 @@ h1 {
       grid-template-columns: 50% 50%;
   -ms-grid-rows: 40rem 40rem;
       grid-template-rows: 40rem 40rem;
+  padding-top: 8rem;
 }
 
 .midNav .midGrid .gridFlex {
@@ -481,8 +481,12 @@ h1 {
 }
 
 .midNav .midGrid .iconContainer {
+<<<<<<< HEAD
   width: 10rem;
   height: 10rem;
+=======
+  margin-right: 2rem;
+>>>>>>> main
 }
 
 .midNav .midGrid i {
@@ -490,6 +494,10 @@ h1 {
   background-color: #4CEEA7;
   color: #2C2C2C;
   font-size: 5rem;
+<<<<<<< HEAD
+=======
+  margin-top: 7rem;
+>>>>>>> main
   padding: 1.5rem;
   width: 100%;
 }
@@ -501,6 +509,7 @@ h1 {
   font-weight: bold;
   text-transform: uppercase;
   padding-top: 10rem;
+<<<<<<< HEAD
 }
 
 .gridFlex i:nth-of-type(2) {
@@ -509,6 +518,8 @@ h1 {
 
 .gridFlex i:nth-of-type(3) {
   padding: 5rem;
+=======
+>>>>>>> main
 }
 
 .featureBlog {
@@ -878,6 +889,154 @@ aside li::before {
   text-transform: uppercase;
 }
 
+<<<<<<< HEAD
 * {
   border: 1px solid midnightblue;
+=======
+@media (max-width: 940px) {
+  h1 {
+    top: 65%;
+    left: 40%;
+    font-size: 8.8rem;
+  }
+  header {
+    background-size: auto;
+    background-position: initial;
+  }
+  .about .imageShadow {
+    display: none;
+  }
+  .about .imageShadow img {
+    display: none;
+  }
+  .extraInfoWrapper {
+    -ms-grid-columns: 40% 40%;
+        grid-template-columns: 40% 40%;
+    gap: 7rem 20rem;
+  }
+  .extraInfoWrapper .post1 {
+    padding-right: 0;
+    width: 100%;
+  }
+  .extraInfoWrapper .post2 {
+    padding-left: 0;
+  }
+  .extraInfoWrapper .imageShadow1 {
+    width: 145%;
+  }
+  .extraInfoWrapper .imageShadow2 {
+    height: 50%;
+    width: 127%;
+    left: -35%;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    top: 71%;
+    left: 34%;
+  }
+  header nav li {
+    margin: 0 2rem;
+  }
+  .extraInfoWrapper {
+    gap: 7rem 17rem;
+  }
+  .extraInfoWrapper .imageShadow1 {
+    width: 145%;
+    height: 80%;
+  }
+  .extraInfoWrapper .imageShadow2 {
+    left: -52%;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+  .midNav .midGrid i {
+    font-size: 2.5rem;
+    margin-top: 8.5rem;
+  }
+  .gridFlex:nth-child(2) > div:nth-child(2) {
+    padding-right: 5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    background-size: cover;
+    height: 50vh;
+  }
+  header ul {
+    display: none;
+  }
+  h1 {
+    font-size: 5.5rem;
+    top: 35%;
+    left: 30%;
+  }
+  .extraInfoWrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .extraInfoWrapper .imageShadow2 {
+    height: auto;
+    width: 100%;
+    left: 0;
+    background-color: none;
+  }
+  .extraInfoWrapper .imageShadow2 img {
+    position: static;
+  }
+  .extraInfoWrapper .imageShadow1 {
+    width: 106%;
+    height: auto;
+    background-color: none;
+  }
+  .extraInfoWrapper .imageShadow1 img {
+    position: static;
+    width: 100%;
+  }
+  .midNav .midGrid i {
+    margin-top: 3.5rem;
+  }
+  p {
+    padding-left: 2.5rem;
+  }
+  .about h2 {
+    margin-top: 5rem;
+  }
+  .about p {
+    width: 80%;
+  }
+  .about .aboutText {
+    padding-bottom: 5rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+    padding-left: 2.5rem;
+  }
+  .midNav .midGrid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .midNav .midGrid h3 {
+    padding-top: 5rem;
+  }
+  .gallery ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+>>>>>>> main
 }
