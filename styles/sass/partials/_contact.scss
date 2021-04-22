@@ -1,0 +1,91 @@
+.contactHeader{
+	background-image: $bgImage3;
+	height: 60vh;
+	h1{
+		position: static;
+		margin: 0;
+		font-size: 8rem;
+		line-height: 9.2rem;
+	}
+}
+
+.contactWrapper{
+	max-width: 1280px;
+	margin-left: 5%;
+	width: 80%;
+}
+
+.contactMain{
+	background-color: $backgroundColorTwo;
+	height: 50vh;
+	ul{
+		display: flex;
+		padding:0;
+		padding-top: 10rem;
+	}
+	li{
+		margin: 0 1.5rem;;
+	}
+	i{
+		font-size: 3rem;
+		
+	}
+}
+
+.contactInfo{
+	width: 25%;
+	
+	h2{
+		font-size:2rem;
+		margin: 2rem 0;
+	}
+	p{
+		margin: 0;
+		line-height: 3.2rem;
+	}
+}
+
+.contactForm{
+	display: flex;
+	flex-direction: column;
+	width:80%;
+	.formBox{
+		margin:0 auto;
+		background-color: $backgroundColorOne;
+		box-shadow: -25px 25px $imageShadow;
+		height: 60vh;
+		width: 50%;
+		position:absolute;
+		bottom: 10%;
+		left: 35%;
+	.username,
+	.email{
+		background-color: $backgroundColorOne;
+		border:none;
+		border-bottom: 3px solid $buttonsndLogosColor;
+		display: inline-block;
+		font-size: 2rem;
+		padding: 2rem;
+		margin: 0 0 2rem 6rem;
+	}
+	}
+	.messageBox{
+		background-color: $backgroundColorOne;
+		border: 3px solid $buttonsndLogosColor;
+		font-size: 2rem;
+		margin-left: 6rem;
+		padding: 5rem;
+		resize:none;
+	}
+	button{
+		background-color:$buttonsndLogosColor;
+		border-style: none;
+		cursor: pointer;
+		width: 85%;
+		display: inline;
+		margin: 2rem 0 2rem 6rem;
+		padding: 1.5rem 2rem;
+		@include fontStyle(2rem);
+	}
+}
+

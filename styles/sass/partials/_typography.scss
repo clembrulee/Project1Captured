@@ -14,6 +14,11 @@ h2{
 	letter-spacing: 1px;
 }
 
+h3{
+	@include fontStyle(3.2rem);
+	margin: 0;
+}
+
 .about h2{
 	margin-top: 20rem;
 }

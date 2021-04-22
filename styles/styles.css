@@ -312,6 +312,15 @@ h2 {
   letter-spacing: 1px;
 }
 
+h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 3.2rem;
+  font-style: italic;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+}
+
 .about h2 {
   margin-top: 20rem;
 }
@@ -471,13 +480,18 @@ h1 {
   display: flex;
 }
 
+.midNav .midGrid .iconContainer {
+  width: 10rem;
+  height: 10rem;
+}
+
 .midNav .midGrid i {
   border-radius: 50%;
   background-color: #4CEEA7;
   color: #2C2C2C;
   font-size: 5rem;
-  margin-top: 2rem;
   padding: 1.5rem;
+  width: 100%;
 }
 
 .midNav .midGrid h3 {
@@ -486,6 +500,7 @@ h1 {
   font-style: italic;
   font-weight: bold;
   text-transform: uppercase;
+  padding-top: 10rem;
 }
 
 .gridFlex i:nth-of-type(2) {
@@ -604,15 +619,22 @@ footer p {
 }
 
 .articleFlex h2 {
-  margin: 0;
+  margin-top: 5rem;
+  padding-left: 5rem;
 }
 
 .articleFlex p {
   margin: 0;
+  padding-left: 5rem;
+  line-height: 3.2rem;
 }
 
 .articleFlex p:first-of-type {
   margin-bottom: 5rem;
+}
+
+.articleFlex p:last-of-type {
+  margin-bottom: 2rem;
 }
 
 aside {
@@ -623,7 +645,7 @@ aside {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 20%;
+  width: 25%;
   top: 15rem;
   left: 10rem;
   position: absolute;
@@ -636,6 +658,226 @@ aside img {
   width: 500%;
 }
 
+aside h3 {
+  margin: 2rem;
+}
+
+aside p {
+  padding: 2rem;
+}
+
+aside a {
+  color: #2C2C2C;
+  display: inline;
+  font-weight: bold;
+  font-style: italic;
+}
+
+aside li {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+}
+
+aside li::before {
+  content: "\2022";
+  color: #4CEEA7;
+  display: inline-block;
+  width: 1rem;
+  margin-left: -5rem;
+}
+
+.commentSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.commentSection h3 {
+  margin: 2rem 0;
+}
+
+.commentSection .imgContainer1 {
+  width: 55rem;
+  margin-right: 2rem;
+}
+
+.commentSection .imgContainer2 {
+  width: 30rem;
+  margin-right: 2rem;
+}
+
 .commentSection p {
   margin: 0;
+  padding: 0 0 2rem 2rem;
+}
+
+.commentSection .comment1,
+.commentSection .comment2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.commentForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.commentForm .username,
+.commentForm .email {
+  background-color: #EFFDF3;
+  border: none;
+  border-bottom: 3px solid #4CEEA7;
+  display: inline-block;
+  font-size: 2rem;
+  padding: 2rem;
+  margin: 2rem 5rem;
+}
+
+.commentForm .commentBox {
+  font-size: 2rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  resize: none;
+  background-color: #EFFDF3;
+  border: 3px solid #4CEEA7;
+}
+
+.commentForm button {
+  background-color: #4CEEA7;
+  border-style: none;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.contactHeader {
+  background-image: url("../assets/contact-header.jpg");
+  height: 60vh;
+}
+
+.contactHeader h1 {
+  position: static;
+  margin: 0;
+  font-size: 8rem;
+  line-height: 9.2rem;
+}
+
+.contactWrapper {
+  max-width: 1280px;
+  margin-left: 5%;
+  width: 80%;
+}
+
+.contactMain {
+  background-color: #EFFDF3;
+  height: 50vh;
+}
+
+.contactMain ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  padding-top: 10rem;
+}
+
+.contactMain li {
+  margin: 0 1.5rem;
+}
+
+.contactMain i {
+  font-size: 3rem;
+}
+
+.contactInfo {
+  width: 25%;
+}
+
+.contactInfo h2 {
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+
+.contactInfo p {
+  margin: 0;
+  line-height: 3.2rem;
+}
+
+.contactForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+}
+
+.contactForm .formBox {
+  margin: 0 auto;
+  background-color: #FAFAFA;
+  -webkit-box-shadow: -25px 25px #FDFA69;
+          box-shadow: -25px 25px #FDFA69;
+  height: 60vh;
+  width: 50%;
+  position: absolute;
+  bottom: 10%;
+  left: 35%;
+}
+
+.contactForm .formBox .username,
+.contactForm .formBox .email {
+  background-color: #FAFAFA;
+  border: none;
+  border-bottom: 3px solid #4CEEA7;
+  display: inline-block;
+  font-size: 2rem;
+  padding: 2rem;
+  margin: 0 0 2rem 6rem;
+}
+
+.contactForm .messageBox {
+  background-color: #FAFAFA;
+  border: 3px solid #4CEEA7;
+  font-size: 2rem;
+  margin-left: 6rem;
+  padding: 5rem;
+  resize: none;
+}
+
+.contactForm button {
+  background-color: #4CEEA7;
+  border-style: none;
+  cursor: pointer;
+  width: 85%;
+  display: inline;
+  margin: 2rem 0 2rem 6rem;
+  padding: 1.5rem 2rem;
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+* {
+  border: 1px solid midnightblue;
 }

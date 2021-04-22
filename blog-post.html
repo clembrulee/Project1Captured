@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +7,6 @@
 	<link rel="stylesheet" href="./styles/styles.css">
 	<title>Blog</title>
 </head>
-
 <body>
 	<header class=blogHeader>
 		<div class="wrapper">
@@ -68,34 +66,48 @@
 		</div>
 		<div class="blogWrapper commentSection">
 			<h3>Comments:</h3>
-			<div class="imgContainer">
-				<img src="" alt="">
+			<div class="comment1">
+				<div class="imgContainer1">
+					<img src="./assets/comment-1.jpg" alt="">
+				</div>
+				<div class="commentText">
+					<p>Tuesday October 9th, 2018 by Jeremy</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae numquam nam voluptates nisi id
+						incidunt. Explicabo eius culpa saepe, vero aperiam corporis magnam velit id! Cum eos id ullam
+						asperiores placeat quisquam reprehenderit, repellat obcaecati provident tempore numquam
+						laboriosam
+						ab similique. Dignissimos dolore sunt tempore aut doloribus? Vitae, ratione soluta?</p>
+				</div>
 			</div>
-			<div class="commentText">
-				<p>Tuesday October 9th, 2018 by Jeremy</p>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae numquam nam voluptates nisi id
-					incidunt. Explicabo eius culpa saepe, vero aperiam corporis magnam velit id! Cum eos id ullam
-					asperiores placeat quisquam reprehenderit, repellat obcaecati provident tempore numquam laboriosam
-					ab similique. Dignissimos dolore sunt tempore aut doloribus? Vitae, ratione soluta?</p>
+			<div class="comment2">
+				<div class="imgContainer2">
+					<img src="./assets/comment-2.jpg" alt="">
+				</div>
+				<div class="commentText">
+					<p>Wednesday October 10th, 2018 by Julia</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut impedit labore quam, animi neque
+						laudantium officiis nulla fugiat eligendi incidunt quis excepturi consectetur fuga? Porro saepe
+						maxime maiores eos deleniti?</p>
+				</div>
 			</div>
-			<div class="imgContainer">
-				<img src="" alt="">
-			</div>
-			<div class="commentText">
-				<p>Wednesday October 10th, 2018 by Julia</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut impedit labore quam, animi neque
-					laudantium officiis nulla fugiat eligendi incidunt quis excepturi consectetur fuga? Porro saepe
-					maxime maiores eos deleniti?</p>
-			</div>
+			<form class="commentForm">
+				<div>
+					<label for="username" class="sr-only">Name</label>
+					<input type="text" class="username" id="username" placeholder="Name">
+					<label for="email" class="sr-only">Email address</label>
+					<input type="email" class="email" id="email" placeholder="Email address">
+				</div>
+				<label for="commentBox" class="sr-only">Comment</label>
+				<textarea name="commentBox" class="commentBox" id="commentBox" cols="30" rows="5" placeholder="Comment" ></textarea>
+				<button class="submit">Post Comment</button>
+			</form>
 		</div>
 		<aside>
 			<div class="imageContainer">
 				<img src="./assets/side-blog-image.jpg" alt="">
 			</div>
 			<h3>about captured</h3>
-			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium quidem explicabo, ipsa sed quasi
-				iusto!</p>
-			<a href="">find out more.</a>
+			<p>Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum. <span><a href="./index.html#about">Find out more.</a> </span></p>
 			<h3>Recent Posts</h3>
 			<ul>
 				<li>Donec facilisis tortor ut</li>

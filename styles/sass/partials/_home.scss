@@ -118,19 +118,22 @@ h1{
 		.gridFlex{
 			display:flex;
 		}
+		.iconContainer{
+			width: 10rem;
+			height: 10rem;
+		}
 		i{
 			border-radius:50%;
 			background-color: $buttonsndLogosColor;
 			color: $textColor;
 			font-size: 5rem;
-			margin-top: 2rem;
 			padding: 1.5rem;
-			
-			
+			width:100%;
 			
 		}
 		h3{
 			@include fontStyle(2.5rem);
+			padding-top: 10rem;
 		}
 		
 	}
