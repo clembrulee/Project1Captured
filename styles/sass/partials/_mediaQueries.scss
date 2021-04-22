@@ -1,48 +1,76 @@
+// **************************Tablet size 940px***************************
 @media (max-width: 940px){
 
-h1 {
-top: 65%;
-left: 40%;
-font-size: 8.8rem;
-}
+	h1 {
+	top: 65%;
+	left: 40%;
+	font-size: 8.8rem;
+	}
 
-header {
-	background-size: auto;
-	background-position: initial;
-}
+	header {
+		background-size: auto;
+		background-position: initial;
+	}
 
-.about{
-	.imageShadow {
-		display: none;
-		img{
+	.about{
+		.imageShadow {
 			display: none;
+			img{
+				display: none;
+			}
 		}
 	}
+
+	.extraInfoWrapper {
+		grid-template-columns: 40% 40%;
+		gap: 7rem 20rem;
+		.post1 {
+			padding-right: 0;
+			width: 100%;
+		}
+		.post2 {
+			padding-left: 0;
+		}	
+		.imageShadow1 {
+			width: 145%;
+		}
+		.imageShadow2 {
+			height: 50%;
+			width: 127%;
+			left: -35%;
+		}
+	}
+
+	
+	// blog media queries
+	.commentForm .username, 
+	.commentForm .email {
+	font-size: 1.5rem;
+	padding: 2.5rem;
+	margin: 2rem 1rem;
+	}
+
+	aside{
+		li {
+			font-size: 1.5rem;
+			padding-bottom: 2rem;
+		}
+		p {
+			font-size: 1.5rem;
+		}	
+		a {
+			font-size: 1.5rem;
+		}
+		
+		h3 {
+			font-size: 2rem;
+		}
+	}
+
+
 }
 
-.extraInfoWrapper {
-	grid-template-columns: 40% 40%;
-	gap: 7rem 20rem;
-	.post1 {
-		padding-right: 0;
-		width: 100%;
-	}
-	.post2 {
-		padding-left: 0;
-	}	
-	.imageShadow1 {
-		width: 145%;
-	}
-	.imageShadow2 {
-		height: 50%;
-		width: 127%;
-		left: -35%;
-	}
-}
-
-}
-
-
+// ****************************MEDIUM SIZE 768px ***************************
 @media (max-width:768px){
 	h1 {
 	top: 71%;
@@ -76,10 +104,31 @@ header {
 	padding-right: 5rem;
 	}
 
+
+// *****************blog 768 size
+
+	aside img {
+	left: -48px;
+	width: 200%;
+	}
+
+	aside {
+	width: 28%;
+	left: 6rem;
+	}
+
+	@media (max-width: 940px) {
+	aside li {
+		padding-bottom: 1rem;
+	}
+}
+
 }
 
 
 
+
+// *********************************SMALL SIZE 480px*******************************
 @media (max-width: 480px) {
 
 	header {
