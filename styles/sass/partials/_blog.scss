@@ -104,20 +104,19 @@ aside{
 	h3{
 		margin: 2rem 0;
 	}
-	.imgContainer1{
-		width: 55rem;
+	.imgContainer{
+		flex-basis:15%;
+		width: 50%;
 		margin-right: 2rem;
 	}
-	.imgContainer2{
-		width: 30rem;
-		margin-right: 2rem;
+	.commentText{
+		flex-basis:100%;
 	}
 	p{
 		margin: 0;
 		padding: 0 0 2rem 2rem;
 	}
-	.comment1,
-	.comment2{
+	.comment{
 	display: flex;
 	}
 }
@@ -154,4 +153,8 @@ aside{
 		padding: 2rem;
 		@include fontStyle(2rem)
 	}
+}
+
+*{
+	border: 1px solid midnightblue;
 }

@@ -694,14 +694,16 @@ aside li::before {
   margin: 2rem 0;
 }
 
-.commentSection .imgContainer1 {
-  width: 55rem;
+.commentSection .imgContainer {
+  -ms-flex-preferred-size: 15%;
+      flex-basis: 15%;
+  width: 50%;
   margin-right: 2rem;
 }
 
-.commentSection .imgContainer2 {
-  width: 30rem;
-  margin-right: 2rem;
+.commentSection .commentText {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
 }
 
 .commentSection p {
@@ -709,8 +711,7 @@ aside li::before {
   padding: 0 0 2rem 2rem;
 }
 
-.commentSection .comment1,
-.commentSection .comment2 {
+.commentSection .comment {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -763,6 +764,10 @@ aside li::before {
   font-style: italic;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+* {
+  border: 1px solid midnightblue;
 }
 
 .contactHeader {
