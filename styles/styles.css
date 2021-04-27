@@ -766,10 +766,6 @@ aside li::before {
   text-transform: uppercase;
 }
 
-* {
-  border: 1px solid midnightblue;
-}
-
 .contactHeader {
   background-image: url("../assets/contact-header.jpg");
   height: 60vh;
