@@ -5,6 +5,7 @@ html{
 		font-family: $mainFont;
 		font-style: italic;
 		font-weight: bold;
+		overflow-x: hidden;
 	}
 }
 
@@ -47,4 +48,8 @@ a{
 		padding: 10px 30px;
 		background-color:$buttonsndLogosColor;
 		color: $textColor;
+	}
+
+	.burgerMenu input{
+		display: none;
 	}
