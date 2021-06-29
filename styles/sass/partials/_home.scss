@@ -118,12 +118,16 @@ h1{
 		grid-template-columns: 50% 50%;
 		grid-template-rows:40rem 40rem ;
 		padding-top: 8rem;
+		
 		.gridFlex{
 			display:flex;
 			
 		}
 		.iconContainer{
 			margin-right: 2rem;
+			display:flex;
+			justify-content: center;
+			align-items: flex-start;
 		}
 		i{
 			border-radius:50%;
@@ -132,15 +136,53 @@ h1{
 			font-size: 5rem;
 			margin-top:7rem;
 			padding: 1.5rem;
-			width:100%;
-			
+			width: 100%;
+			height: min-content;
 		}
 		h3{
 			@include fontStyle(2.5rem);
 			padding-top: 10rem;
 		}
-		
-		
+		// .cameraTitle:before{
+		// 	border-radius:50%;
+		// 	background-color: $buttonsndLogosColor;
+		// 	font-family: "Font Awesome 5 Free";
+		// 	font-style: normal;
+		// 	content: "\f030";
+		// 	display: inline-block;
+		// 	vertical-align: top;
+		// 	padding-right: 10px;
+		// }
+		// .communityTitle:before{
+		// 	border-radius:50%;
+		// 	background-color: $buttonsndLogosColor;
+		// 	font-family: "Font Awesome 5 Free";
+		// 	font-style: normal;
+		// 	content: "\f0c0";
+		// 	display: inline-block;
+		// 	vertical-align: top;
+		// 	padding-right: 10px;
+		// }
+		// .blogMidTitle:before{
+		// 	border-radius:50%;
+		// 	background-color: $buttonsndLogosColor;
+		// 	font-family: "Font Awesome 5 Free";
+		// 	font-style: normal;
+		// 	content: "\f15b";
+		// 	display: inline-block;
+		// 	vertical-align: top;
+		// 	padding-right: 20px;
+		// }
+		// .phoneTitle:before{
+		// 	border-radius:50%;
+		// 	background-color: $buttonsndLogosColor;
+		// 	font-family: "Font Awesome 5 Free";
+		// 	font-style: normal;
+		// 	content: "\f095";
+		// 	display: inline-block;
+		// 	vertical-align: top;
+		// 	padding-right: 10px;
+		// }
 	}
 }
 
