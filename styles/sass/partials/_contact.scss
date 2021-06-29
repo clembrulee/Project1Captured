@@ -81,11 +81,14 @@
 		background-color:$buttonsndLogosColor;
 		border-style: none;
 		cursor: pointer;
-		width: 85%;
+		width: 80%;
 		display: inline;
 		margin: 2rem 0 2rem 6rem;
 		padding: 1.5rem 2rem;
 		@include fontStyle(2rem);
+	}
+	textarea{
+		width:80%;
 	}
 }
 

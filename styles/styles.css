@@ -871,7 +871,7 @@ aside li::before {
   background-color: #4CEEA7;
   border-style: none;
   cursor: pointer;
-  width: 85%;
+  width: 80%;
   display: inline;
   margin: 2rem 0 2rem 6rem;
   padding: 1.5rem 2rem;
@@ -880,6 +880,10 @@ aside li::before {
   font-style: italic;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+.contactForm textarea {
+  width: 80%;
 }
 
 @media (max-width: 940px) {
